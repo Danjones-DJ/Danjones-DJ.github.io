@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- This is what appears on the browser tab -->
+  <title>Dan Jones</title>
+
+  <!-- All your visual styling lives here.
+       Later you can move this into a separate style.css file
+       and link it with: <link rel="stylesheet" href="style.css"> -->
+  <style>
+
+    /* === GLOBAL === */
+    /* These rules apply to the whole page */
+    body {
+      font-family: Georgia, serif;    /* Change this to any font you like */
+      max-width: 800px;               /* Stops the page getting too wide on big screens */
+      margin: 0 auto;                 /* Centers the content */
+      padding: 2rem;                  /* Breathing room around the edges */
+      background-color: #ffffff;
+      color: #222222;
+    }
+
+
+    /* === HEADER === */
+    header {
+      border-bottom: 1px solid #cccccc;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+    }
+
+    header h1 {
+      font-size: 2rem;
+      margin-bottom: 0.25rem;
+    }
+
+    header p {
+      color: #555555;   /* Muted grey for the subtitle */
+      margin: 0;
+    }
+
+
+    /* === NAVIGATION === */
+    nav {
+      margin-bottom: 2rem;
+    }
+
+    nav a {
+      margin-right: 1.5rem;
+      color: #222222;
+      text-decoration: none;
+    }
+
+    nav a:hover {
+      text-decoration: underline;   /* Underline on hover so users know it's a link */
+    }
+
+
+    /* === SECTIONS === */
+    section {
+      margin-bottom: 3rem;
+    }
+
+    section h2 {
+      font-size: 1.25rem;
+      border-bottom: 1px solid #eeeeee;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.5rem;
+    }
+
+
+    /* === PROJECT CARDS === */
+    /* Each project sits in a "card" — a bordered box */
+    .card {
+      border: 1px solid #dddddd;
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .card h3 {
+      margin: 0 0 0.5rem 0;
+      font-size: 1.1rem;
+    }
+
+    .card p {
+      margin: 0 0 0.75rem 0;
+      color: #444444;
+      line-height: 1.6;
+    }
+
+    /* The tag shows the tools/languages used, e.g. "Python · Pandas" */
+    .tag {
+      font-size: 0.8rem;
+      color: #777777;
+      font-family: monospace;
+    }
+
+    /* A plain link styled as a small button */
+    .card a {
+      display: inline-block;
+      margin-top: 0.75rem;
+      font-size: 0.85rem;
+      color: #222222;
+      text-decoration: underline;
+    }
+
+
+    /* === FOOTER === */
+    footer {
+      border-top: 1px solid #cccccc;
+      padding-top: 1rem;
+      margin-top: 2rem;
+      font-size: 0.85rem;
+      color: #888888;
+    }
+
+  </style>
+</head>
+
+
+<body>
+
+  <!-- ===================== HEADER ===================== -->
+  <!-- Your name and degree sit at the top of every page -->
+  <header>
+    <h1>Dan Jones</h1>
+    <p>BSc Social Sciences with Data Science</p>
+  </header>
+
+
+  <!-- ===================== NAVIGATION ===================== -->
+  <!-- Links that jump to sections on this page using # anchors.
+       The href="#projects" matches the id="projects" on the section below. -->
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+
+  <!-- ===================== ABOUT ===================== -->
+  <!-- A short intro. Write 2-3 sentences about yourself and your interests. -->
+  <section id="about">
+    <h2>About</h2>
+    <p>
+      <!-- Replace this with your own words -->
+      Write a short intro here. What are you interested in? What kind of work do you do?
+      What are you looking for? Keep it to a short paragraph.
+    </p>
+  </section>
+
+
+  <!-- ===================== PROJECTS ===================== -->
+  <!-- Add one .card block per project.
+       Duplicate a card and fill in your own details to add more. -->
+  <section id="projects">
+    <h2>Projects</h2>
+
+
+    <!-- PROJECT 1: Spatial Data -->
+    <div class="card">
+      <h3>Spatial Data Analysis</h3>
+      <p>
+        <!-- Describe what this project is, what question it answers,
+             and what you found. A few sentences is enough. -->
+        Brief description of your spatial data project. What did you analyse?
+        What area or dataset? What was the main finding?
+      </p>
+      <span class="tag">Python · GeoPandas · QGIS</span>   <!-- Edit tools as needed -->
+      <!-- Replace # with the actual URL when you have one.
+           This could be a GitHub repo, a PDF, a Jupyter notebook, anything. -->
+      <br>
+      <a href="#">View project →</a>
+    </div>
+
+
+    <!-- PROJECT 2: AR-GARCH -->
+    <div class="card">
+      <h3>AR-GARCH Modelling</h3>
+      <p>
+        Brief description of your AR-GARCH project. What time series did you model?
+        What were you trying to capture — volatility, forecasting? What did you find?
+      </p>
+      <span class="tag">R · rugarch · ggplot2</span>   <!-- Edit tools as needed -->
+      <br>
+      <a href="#">View project →</a>
+    </div>
+
+
+    <!-- PROJECT 3: MRP -->
+    <div class="card">
+      <h3>Multilevel Regression and Poststratification (MRP)</h3>
+      <p>
+        Brief description of your MRP project. What were you estimating?
+        What population or survey did you use? What was the outcome?
+      </p>
+      <span class="tag">R · brms · Stan</span>   <!-- Edit tools as needed -->
+      <br>
+      <a href="#">View project →</a>
+    </div>
+
+
+    <!-- TO ADD ANOTHER PROJECT: copy everything from "PROJECT 1" above,
+         paste it here, and change the text inside. -->
+
+  </section>
+
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>
+      <!-- Add your email, LinkedIn, GitHub — whatever you're happy to share -->
+      <a href="mailto:your@email.com">your@email.com</a> ·
+      <a href="https://github.com/danjones-dj">GitHub</a>
+    </p>
+  </section>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer>
+    <p>Dan Jones — updated May 2026</p>
+  </footer>
+
+
+</body>
+</html>
